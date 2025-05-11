@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link-in-Bio</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile {
+            margin-bottom: 25px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #888;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            font-weight: 600;
+        }
+
+        .bio {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 8px;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #eaeaea;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .link-text {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .website {
+            background-color: #4A90E2;
+            color: white;
+        }
+
+        .bluesky {
+            background-color: #1DA1F2;
+            color: white;
+        }
+
+        .pixelfed {
+            background-color: #FF9888;
+            color: white;
+        }
+
+        .mastodon {
+            background-color: #6364FF;
+            color: white;
+        }
+
+        .substack {
+            background-color: #FF6719;
+            color: white;
+        }
+
+        .tiktok {
+            background-color: #000000;
+            color: white;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-pic">
+                <!-- Profile Image Placeholder -->
+                <span>👤</span>
+            </div>
+            <h1>Astrus Minerveaux</h1>
+            <p class="bio">Welcome to my corner of the internet! Check out my content across different platforms.</p>
+        </div>
+
+        <div class="links">
+            <a href="https://astrus.live" class="link website">
+                <div class="link-icon">🌐</div>
+                <span class="link-text">Personal Website</span>
+            </a>
+
+            <a href="https://bsky.app/profile/astrus.live" class="link bluesky">
+                <div class="link-icon">🦋</div>
+                <span class="link-text">Bluesky</span>
+            </a>
+
+            <a href="https://pixelfed.social/astrus" class="link pixelfed">
+                <div class="link-icon">📷</div>
+                <span class="link-text">Pixelfed</span>
+            </a>
+
+            <a href="https://astrus.substack.com" class="link substack">
+                <div class="link-icon">📝</div>
+                <span class="link-text">Substack</span>
+            </a>
+
+            <a href="https://tiktok.com/@astrusminerveaux" class="link tiktok">
+                <div class="link-icon">🎵</div>
+                <span class="link-text">TikTok</span>
+            </a>
+        </div>
+
+        <footer>
+            2025 © Astrus Minerveaux.
+        </footer>
+    </div>
+</body>
+</html>
